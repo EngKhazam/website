@@ -7,7 +7,7 @@ $.getScript(
     // Function to load language file
     function loadLanguageResources(lang, callback) {
       $.ajax({
-        url: `/resources/lang/${lang}.json`, // Adjust the path to where your JSON files are located
+        url: `/website/resources/lang/${lang}.json`, // Adjust the path to where your JSON files are located
         dataType: "json",
         success: function (data) {
           callback(data);
