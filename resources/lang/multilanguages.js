@@ -10,6 +10,7 @@ $(document).ready(function () {
       error: function () {
         console.error(`Could not load ${lang}.json`);
       },
+      
     });
   }
 

@@ -1,9 +1,9 @@
 {
   "welcome": "حيَّاك",
-  "Home": "الرئيسيَّة",
-  "Educational": "تعليمي",
-  "Academic": "أكاديمي",
-  "Youtube": "Youtube",
-  "Fun": "وناسة",
-  "About":"من أكون؟"
+  "home": "الرئيسيَّة",
+  "educational": "تعليمي",
+  "academic": "أكاديمي",
+  "youtube": "Youtube",
+  "fun": "وناسة",
+  "about":"من أكون؟"
 }
