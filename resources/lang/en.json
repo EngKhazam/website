@@ -7,5 +7,19 @@
   "fun": "Fun",
   "about": "About",
   "english": "English",
-  "arabic": "عربي"
+  "arabic": "عربي",
+  "en": "English",
+  "ar": "عربي",
+  "lang": "اللُّغة",
+  "intro": "This is a simple website that displays various aspects of me",
+  "Eng. Khazam Alhamdan": "Eng. Khazam Alhamdan",
+  "paper_title_alhamdan2019things": "Things Object Notation as a Communicational Light-weighted Language for IoT Devices",
+  "paper_abstract_alhamdan2019things": "IoT interoperability is a major challenge in the emerging IoT field. This paper introduces a novel and light weighted language for the IoT devices to use. TON (Things Object Notation) is a language which was built on top of JSON (JavaScript Object Notation) to accommodate the needs of IoTs’ interoperability. This research improves two aspects of JSON (1) compactness and (2) commanding. Currently, a lot of communicational pollution such as wireless data and noise emerge from the explosion of the IoTs. Thus, a minimum information/data is needed to be sent. In addition, since most practitioners are hobbyists, a one language/protocol that passes information and commands will be more convenient. Further, this study provides three use cases and shows comparison between using JSON and TON as a mean to send data and information. ",
+  "paper_comment_alhamdan2019things": "",
+  "paper_title_alhamdan2019attack": "Attack on a Scheme for Obfuscating and Outsourcing SAT Computations to the Cloud.",
+  "paper_abstract_alhamdan2019attack": "The emergence of cloud computing gave users the capability to offload computations that cannot be executed locally to cloud servers with large computational power. One such computationally demanding problem is solving large satisfiability (SAT) instances. Although many problems from AI, circuit verification, etc. can be converted to SAT, outsourcing SAT instances may leak considerable information that can put a user’s security at risk. Hence the privacy of outsourcing computations to the cloud is a major issue. In this work we look at the techniques of Qin et al. (Qin and Jia., 2014; Qin and Du., 2018) which have been used to obfuscate SAT formulas before they are released to the cloud. We came up with a realistic attack against their technique that demonstrates how a malicious cloud provider can obtain significant information about the underlying SAT instance. Our work shows that ad hoc schemes cannot offer the required security guarantees for outsourcing SAT computations, hence more formal frameworks should be used instead.",
+  "paper_comment_alhamdan2019attack": "",
+  "paper_title_thesis": "Privacy Preserving Outsourcing of SAT Formulas to the Cloud",
+  "paper_abstract_thesis": "We propose a novel obfuscation technique that can be used to outsource hard satisfiability (SAT) formulas to the cloud. Servers with large computational power are typically used to solve SAT instances that model real-life problems in task scheduling, AI planning and circuit verification. However, outsourcing data to the cloud may lead to privacy and information breaches since satisfying assignments may reveal considerable information about the underlying problem modeled by SAT. In this work, we develop a structure-aware obfuscation framework that is similar to Indistinguishability Obfuscation. At the core of the framework lies an automorphism mechanism that transforms any formula to a random one with the same number of satisfying assignments. Hence obfuscated formulas are indistinguishable from each other thus preserving the input-output privacy of the original SAT instance. Contrary to prior solutions that are rather adhoc in nature, we formally prove the security of our scheme. Additionally, we show that the size of obfuscated formulas are within a factor n of the original ones thus achieving polynomial slowdown. Finally, the whole process is very efficient in practice, allowing solutions to original instances to be easily recovered from obfuscated ones. Our experimental evaluation shows the feasibility and generality of our approach which makes it ideal for real world applications.",
+  "paper_comment_thesis": ""
 }

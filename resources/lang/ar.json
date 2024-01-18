@@ -7,5 +7,20 @@
   "fun": "وناسة",
   "about": "من أكون؟",
   "english": "English",
-  "arabic": "عربي"
+  "arabic": "عربي",
+  "en": "English",
+  "ar": "عربي",
+  "lang":"language",
+  "intro": "هذا موقع خفيف يعرض جوانب متنوعة من إهتماماتي",
+  "Eng. Khazam Alhamdan":"م. خزام الحمدان",
+  "paper_title_alhamdan2019things": "Things Object Notation as a Communicational Light-weighted Language for IoT Devices",
+  "paper_abstract_alhamdan2019things": "IoT interoperability is a major challenge in the emerging IoT field. This paper introduces a novel and light weighted language for the IoT devices to use. TON (Things Object Notation) is a language which was built on top of JSON (JavaScript Object Notation) to accommodate the needs of IoTs’ interoperability. This research improves two aspects of JSON (1) compactness and (2) commanding. Currently, a lot of communicational pollution such as wireless data and noise emerge from the explosion of the IoTs. Thus, a minimum information/data is needed to be sent. In addition, since most practitioners are hobbyists, a one language/protocol that passes information and commands will be more convenient. Further, this study provides three use cases and shows comparison between using JSON and TON as a mean to send data and information. ",
+  "paper_comment_alhamdan2019things": "",
+  "paper_title_alhamdan2019attack": "Attack on a Scheme for Obfuscating and Outsourcing SAT Computations to the Cloud.",
+  "paper_abstract_alhamdan2019attack": "The emergence of cloud computing gave users the capability to offload computations that cannot be executed locally to cloud servers with large computational power. One such computationally demanding problem is solving large satisfiability (SAT) instances. Although many problems from AI, circuit verification, etc. can be converted to SAT, outsourcing SAT instances may leak considerable information that can put a user’s security at risk. Hence the privacy of outsourcing computations to the cloud is a major issue. In this work we look at the techniques of Qin et al. (Qin and Jia., 2014; Qin and Du., 2018) which have been used to obfuscate SAT formulas before they are released to the cloud. We came up with a realistic attack against their technique that demonstrates how a malicious cloud provider can obtain significant information about the underlying SAT instance. Our work shows that ad hoc schemes cannot offer the required security guarantees for outsourcing SAT computations, hence more formal frameworks should be used instead.",
+  "paper_comment_alhamdan2019attack": "",
+  "paper_title_thesis": "الحفاظ على خصوصيَّة الصِّيغ التَّحققيَّة عند إسدائها إلى الحواسيب السَّحابيَّة",
+  "paper_abstract_thesis": "نحن نطرح طريقة تعتيم مستحدثة يمكن استعمالها لتصدير مسائل التَّحقُّقيَّة المنطقيَّة إلى الحواسيب السَّحابيَّة. عادة ما تستخدم الخوادم ذات القوَّة الحسابيَّة الكبيرة لحل مسائل التَّحقُّقيَّة التي تُنَمذج مسائل حياتيَّة متنوِّعة كتنظيم التَّكاليف وتخطيط الذَّكاء الاصطناعي والتَّحقق من صحَّة الدَّوائر الكهربائيَّة والمنطقيَّة. و على الرغم من ذلك فإنَّ تصدير البيانات قد يتسبب بتسريب معلومات خاصَّة أو سريَّة, حيث أنَّ حل أحدى المسائل المنبذجة على هيئة مسألة تحقُّقيَّة قد يفضي إلى كشف معلومات حسَّاسة مرتبطة بالمسألة.\nفي هذا العمل قمنا بتطوير طريقة تعتيم تأخذ بعين الاعتبار بُنية المسألة تشابه طرق التَّعتيم الابهامي. في قلب طريقتنا تكمن حيل ذاتيَّة التَّشاكل القادرة على تحويل أي معادلة إلى أخرى عشوائيَّة بنفس عدد حلول. ولأنَّ المسائل المعتَّمة لا يمكن تمييزها عن غيرها بذلك نضمن سريَّة بيانات المسألة الأصليَّة. بالتَّباين عن طرق التَّعميم الأخرى التي تبدوا ترقيعيَّة بطبيعتها فإنَّنا قمنا بإثبات أمان طريقتنا. بالإضافة إلى ذلك فقد أثبتنا أنَّ المسائل المعتَّمة عندنا هي في حيِّز n من المسألة الأصليَّة من ما يجعل تباطئنا حدودي. و أخيراً عمليَّاً جُل سير العمليَّة عالية الكفاءة, و التي تظهر سهولة استرجاع الحل للمسألة الأصليَّة من المسألة المعتَّمة.\nتقيمنا بالتجربة يظهر إمكانيَّة و عموميَّة طريقتنا و التي تجعلها مثاليَّة للتَّطبيق في الواقع",
+  "paper_comment_thesis": ""
+
 }
