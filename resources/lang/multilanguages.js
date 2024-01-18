@@ -10,7 +10,6 @@ $(document).ready(function () {
       error: function () {
         console.error(`Could not load ${lang}.json`);
       },
-      
     });
   }
 
@@ -43,9 +42,12 @@ $(document).ready(function () {
     });
   }
 
-  // Language switcher event
-  $("#languageSwitcher").on("change", function () {
-    i18next.changeLanguage($(this).val(), function () {
+  // Event handler for language switcher
+  $("#languageSwitcher .dropdown-item").on("click", function () {
+    var selectedLanguage = $(this).data("i18n"); // Assuming 'data-i18n' holds the language code
+
+    // Change i18next language
+    i18next.changeLanguage(selectedLanguage, function () {
       updateContent();
     });
   });

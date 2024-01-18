@@ -43,10 +43,26 @@
         <nav class="navbar fixed-bottom bg-primary primary">
           <div class="container">
             <!-- more navigation code here -->
-            <a href="#index" class="active">Home</a>
-            <a href="#news">News</a>
-            <a href="#contact">Contact</a>
-            <a href="#about">About</a>
+            <a href="#" data-i18n="home" class="active">Home</a>
+            <a href="educational" data-i18n="educational">educational</a>
+            <a href="fun" data-i18n="fun">fun</a>
+            <a href="youtube" data-i18n="youtube">youtube</a>
+            <a href="academic" data-i18n="academic">academic</a>
+            <a href="about" data-i18n="about">about</a>
+
+            <ul class="dropdown-menu" id="languageSwitcher">
+              <li><span class="dropdown-item" data-i18n="en">English</span></li>
+              <li><span class="dropdown-item" data-i18n="ar">العربية</span></li>
+            </ul>
+
+            <select id="languageSwitcher" class="">
+              <option value="en">
+                <span data-i18n="english"></span>
+              </option>
+              <option value="ar">
+                <span data-i18n="arabic"></span>
+              </option>
+            </select>
           </div>
         </nav>
         <div><p>1 hello</p></div>
@@ -55,11 +71,6 @@
 
         <div>
           <span data-i18n="welcome"></span>
-
-          <select id="languageSwitcher">
-            <option value="en">English</option>
-            <option value="ar">Arabic</option>
-          </select>
         </div>
       </div>
     </body>
