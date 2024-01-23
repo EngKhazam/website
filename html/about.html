@@ -1,19 +1,94 @@
 <!DOCTYPE html>
-<html lang="en" data-bs-theme="dark">
+<html lang="ar" data-bs-theme="dark" dir="rtl">
   <html>
     <head>
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
       <title>Engineer Khazam</title>
       <script
         src="https://code.jquery.com/jquery-3.7.1.min.js"
         integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
         crossorigin="anonymous"
       ></script>
-      <script src="/website/js/includes.js"></script>
+      <script src="/js/includes.js"></script>
     </head>
     <body>
-      <div class="m-5">
-        <div id="navbar-placeholder"></div>
+      <div class="m-2">
+        <nav class="navbar fixed-bottom bg-primary primary" id="navbar">
+          <div class="container xl">
+            <a class="nav-item text-white" href="/index.html">
+              <i class="fa-solid fa-house" id="nav-bar-home"></i>
+            </a>
+            <a class="nav-item text-white" href="/website/html/educational.html">
+              <i
+                class="fa-solid fa-chalkboard-user"
+                id="nav-bar-educational"
+              ></i>
+            </a>
+            <a class="nav-item text-white" href="/website/html/fun.html">
+              <i class="fa-regular fa-face-grin-stars" id="nav-bar-fun"> </i>
+            </a>
+            <a
+              class="nav-item text-white"
+              href="https://www.youtube.com/channel/UChyQgE14JcfQxFafHyaZkwQ"
+            >
+              <i class="fa-brands fa-youtube" id="nav-bar-youtube"></i>
+            </a>
+            <a class="nav-item text-white" href="/website/html/academic.html">
+              <i class="fa-solid fa-graduation-cap" id="nav-bar-academic"></i>
+            </a>
+            <a class="nav-item text-white" href="/website/html/about.html">
+              <i class="fa-solid fa-address-card" id="nav-bar-about"></i>
+            </a>
+          </div>
+        </nav>
+
+        <div class="text-center p-5">
+          <h3>خزام الحمدان</h3>
+          <h4>مهندس كمبيوتر</h4>
+          <h6>بكلريوس هندسة كمبيوتر & ماجستير هندسة كمبيوتر من جامعة الكويت</h6>
+          <br />
+          <div>
+            <h4 class="text-justify">
+              بدأ بالرياضيَّات و متفرَّعت إلى غيرها:
+              <div class="p-4">
+                <h5 class="bg-secondary p-2">رياضيَّات</h5>
+                <div class="px-4">
+                  <h5>جبر</h5>
+                  <h5>جبر خطي</h5>
+                  <h5>جبر مجرد</h5>
+                  <h5>حساب و حسبان</h5>
+                  <h5>هندسة</h5>
+                </div>
+                <h5 class="bg-secondary p-2">فيزياء</h5>
+                <div class="px-4">
+                  <h5>فيزياء كلاسيكيَّة</h5>
+                  <h5>فيزياء جزيئية</h5>
+                  <h5>فيزياء النسبية</h5>
+                  <h5>فيزياء كمية</h5>
+                </div>
+                <h5 class="bg-secondary p-2">برمجة</h5>
+                <div class="px-4">
+                  <h5>محاكيات</h5>
+                  <h5>ألعاب</h5>
+                  <h5>أنظمة</h5>
+                  <h5>مواقع</h5>
+                </div>
+                <h5 class="bg-secondary p-2">كمبيوتر</h5>
+                <div class="px-4">
+                  <h5>خوارزميات</h5>
+                  <h5>تشفير</h5>
+                </div>
+                
+              </div>
+            </h4>
+          </div>
+        </div>
       </div>
+      <script>
+        $(document).ready(function () {
+          $("#nav-bar-about").addClass("inverted");
+        });
+      </script>
     </body>
   </html>
 </html>

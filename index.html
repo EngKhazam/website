@@ -1,24 +1,59 @@
 <!DOCTYPE html>
-<html lang="en" data-bs-theme="dark">
+<html lang="ar" data-bs-theme="dark" dir="rtl">
   <html>
     <head>
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
       <title>Engineer Khazam</title>
       <script
         src="https://code.jquery.com/jquery-3.7.1.min.js"
         integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
         crossorigin="anonymous"
       ></script>
+
       <script src="/js/includes.js"></script>
     </head>
     <body>
-      <div class="m-5">
-        <div id="navbar-placeholder"></div>
-        <div class="text-center">
-          <h1>حيَّاك</h1>
-          <h2>هذا موقع خفيف يعرض جوانب متنوعة من إهتماماتي</h2>
-          <h4>م. خزام الحمدان</h4>
+      <div class="m-2">
+        <nav class="navbar fixed-bottom bg-primary primary" id="navbar">
+          <div class="container xl">
+            <a class="nav-item text-white" href="/index.html">
+              <i class="fa-solid fa-house" id="nav-bar-home"></i>
+            </a>
+            <a class="nav-item text-white" href="/website/html/educational.html">
+              <i
+                class="fa-solid fa-chalkboard-user"
+                id="nav-bar-educational"
+              ></i>
+            </a>
+            <a class="nav-item text-white" href="/website/html/fun.html">
+              <i class="fa-regular fa-face-grin-stars" id="nav-bar-fun"> </i>
+            </a>
+            <a
+              class="nav-item text-white"
+              href="https://www.youtube.com/channel/UChyQgE14JcfQxFafHyaZkwQ"
+            >
+              <i class="fa-brands fa-youtube" id="nav-bar-youtube"></i>
+            </a>
+            <a class="nav-item text-white" href="/website/html/academic.html">
+              <i class="fa-solid fa-graduation-cap" id="nav-bar-academic"></i>
+            </a>
+            <a class="nav-item text-white" href="/website/html/about.html">
+              <i class="fa-solid fa-address-card" id="nav-bar-about"></i>
+            </a>
+          </div>
+        </nav>
+
+        <div class="text-center my-5">
+          <h1 class="my-3">حيَّاك</h1>
+          <h2 class="my-3">هذا موقع خفيف يعرض جوانب متنوعة من إهتماماتي</h2>
+          <h4 class="my-3">م. خزام الحمدان</h4>
         </div>
       </div>
+      <script>
+        $(document).ready(function () {
+          $("#nav-bar-home").addClass("inverted");
+        });
+      </script>
     </body>
   </html>
 </html>

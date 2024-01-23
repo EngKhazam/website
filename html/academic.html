@@ -1,19 +1,263 @@
 <!DOCTYPE html>
-<html lang="en" data-bs-theme="dark">
+<html lang="ar" data-bs-theme="dark" dir="rtl">
   <html>
     <head>
+      <link
+        href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600&display=swap"
+        rel="stylesheet"
+      />
+
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
       <title>Engineer Khazam</title>
       <script
         src="https://code.jquery.com/jquery-3.7.1.min.js"
         integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
         crossorigin="anonymous"
       ></script>
-      <script src="/website/js/includes.js"></script>
+      <script src="/js/includes.js"></script>
     </head>
     <body>
-      <div class="m-5">
-        <div id="navbar-placeholder"></div>
+      <div class="m-2 my-5">
+        <nav class="navbar fixed-bottom bg-primary primary" id="navbar">
+          <div class="container xl">
+            <a class="nav-item text-white" href="/index.html">
+              <i class="fa-solid fa-house" id="nav-bar-home"></i>
+            </a>
+            <a class="nav-item text-white" href="/website/html/educational.html">
+              <i
+                class="fa-solid fa-chalkboard-user"
+                id="nav-bar-educational"
+              ></i>
+            </a>
+            <a class="nav-item text-white" href="/website/html/fun.html">
+              <i class="fa-regular fa-face-grin-stars" id="nav-bar-fun"> </i>
+            </a>
+            <a
+              class="nav-item text-white"
+              href="https://www.youtube.com/channel/UChyQgE14JcfQxFafHyaZkwQ"
+            >
+              <i class="fa-brands fa-youtube" id="nav-bar-youtube"></i>
+            </a>
+            <a class="nav-item text-white" href="/website/html/academic.html">
+              <i class="fa-solid fa-graduation-cap" id="nav-bar-academic"></i>
+            </a>
+            <a class="nav-item text-white" href="/website/html/about.html">
+              <i class="fa-solid fa-address-card" id="nav-bar-about"></i>
+            </a>
+          </div>
+        </nav>
+
+        <div class="p-5">
+          <label style="font-size: 3rem">قائمة الأبحاث</label>
+        </div>
+        <div class="px-5">
+          <ul>
+            <li class="py-1">
+              <a href="#paper-1" class="text-light"
+                >Privacy Preserving Outsourcing of SAT Formulas to the Cloud</a
+              >
+            </li>
+            <li class="py-1">
+              <a href="#paper-2" class="text-light"
+                >CENSOR: Privacy-preserving Obfuscation for Outsourcing SAT
+                formulas</a
+              >
+            </li>
+            <li class="py-1">
+              <a href="#paper-3" class="text-light"
+                >Attack on a Scheme for Obfuscating and Outsourcing SAT
+                Computations to the Cloud</a
+              >
+            </li>
+            <li class="py-1">
+              <a href="#paper-4" class="text-light"
+                >THINGS OBJECT NOTATION AS A COMMUNICATIONAL LIGHT-WEIGHTED
+                LANGUAGE FOR IOT DEVICES</a
+              >
+            </li>
+          </ul>
+        </div>
+        <hr />
+
+        <div class="container py-0 m-0" id="paper-1">
+          <div class="row">
+            <div class="col-lg-8 mx-auto">
+              <div class="rounded border border-light p-5">
+                <h1 class="display-4 text-justify" dir="ltr">
+                  Privacy Preserving Outsourcing of SAT Formulas to the Cloud
+                </h1>
+                <p class="lead" dir="ltr">Abstract</p>
+                <hr />
+                <p class="text-justify" dir="ltr">
+                  We propose a novel obfuscation technique that can be used to
+                  outsource hard satisffability (SAT) formulas to the cloud.
+                  Servers with large computational power are typically used to
+                  solve SAT instances that model real-life problems in task
+                  scheduling, AI planning and circuit veriffcation. However,
+                  outsourcing data to the cloud may lead to privacy and
+                  information breaches since satisfying assignments may reveal
+                  considerable information about the underlying problem modeled
+                  by SAT. In this work, we develop a structure-aware obfuscation
+                  framework that is similar to Indistinguishability Obfuscation.
+                  At the core of the framework lies an automorphism mechanism
+                  that transforms any formula to a random one with the same
+                  number of satisfying assignments. Hence obfuscated formulas
+                  are indistinguishable from each other thus preserving the
+                  input-output privacy of the original SAT instance. Contrary to
+                  prior solutions that are rather adhoc in nature, we formally
+                  prove the security of our scheme. Additionally, we show that
+                  the size of obfuscated formulas are within a factor n of the
+                  original ones thus achieving polynomial slowdown. Finally, the
+                  whole process is very efficient in practice, allowing
+                  solutions to original instances to be easily recovered from
+                  obfuscated ones. Our experimental evaluation shows the
+                  feasibility and generality of our approach which makes it
+                  ideal for real world applications.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <hr />
+
+        <div class="container py-0 m-0" id="paper-2">
+          <div class="row">
+            <div class="col-lg-8 mx-auto">
+              <div class="rounded border border-light p-5">
+                <h1 class="display-4 text-justify" dir="ltr">
+                  CENSOR: Privacy-preserving Obfuscation for Outsourcing SAT
+                  formulas
+                </h1>
+                <a class="text-justify" href="https://eprint.iacr.org/2022/672"
+                  >[link]</a
+                >
+                <p class="lead" dir="ltr">Abstract</p>
+                <hr />
+                <p class="text-justify" dir="ltr">
+                  We propose a novel obfuscation technique that can be used to
+                  outsource hard satisfiability (SAT) formulas to the cloud.
+                  Servers with large computational power are typically used to
+                  solve SAT instances that model real-life problems in task
+                  scheduling, AI planning, circuit verification and more.
+                  However, outsourcing data to the cloud may lead to privacy and
+                  information breaches since satisfying assignments may reveal
+                  considerable information about the underlying problem modeled
+                  by SAT.
+                </p>
+                <p class="text-justify" dir="ltr">
+                  In this work, we develop CENSOR (privaCy prEserviNg
+                  obfuScation for Outsourcing foRmulas), a novel SAT obfuscation
+                  framework that resembles Indistinguishability Obfuscation. At
+                  the core of the framework lies a mechanism that transforms any
+                  formula to a random one with the same number of satisfying
+                  assignments. As a result, obfuscated formulas are
+                  indistinguishable from each other thus preserving the
+                  input-output privacy of the original SAT instance. Contrary to
+                  prior solutions that are rather adhoc in nature, we formally
+                  prove the security of our scheme. Additionally, we show that
+                  obfuscated formulas are within a polynomial factor of the
+                  original ones thus achieving polynomial slowdown. Finally, the
+                  whole process is efficient in practice, allowing solutions to
+                  original instances to be easily recovered from obfuscated
+                  ones.
+                </p>
+                <p class="text-justify" dir="ltr">
+                  A byproduct of our method is that all NP problems can be
+                  potentially outsourced to the cloud by means of reducing to
+                  SAT.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <hr />
+
+        <div class="container py-0 m-0" id="paper-3">
+          <div class="row">
+            <div class="col-lg-8 mx-auto">
+              <div class="rounded border border-light p-5">
+                <h1 class="display-4 text-justify" dir="ltr">
+                  Attack on a Scheme for Obfuscating and Outsourcing SAT
+                  Computations to the Cloud
+                </h1>
+                <a
+                  class="text-justify"
+                  href="https://www.scitepress.org/Papers/2019/78295/78295.pdf"
+                  >[link]</a
+                >
+                <p class="lead" dir="ltr">Abstract</p>
+                <hr />
+                <p class="text-justify" dir="ltr">
+                  The emergence of cloud computing gave users the capability to
+                  offload computations that cannot be executed locally to cloud
+                  servers with large computational power. One such
+                  computationally demanding problem is solving large
+                  satisfiability (SAT) instances. Although many problems from
+                  AI, circuit verification, etc. can be converted to SAT,
+                  outsourcing SAT instances may leak considerable information
+                  that can put a user's security at risk. Hence the privacy of
+                  outsourcing computations to the cloud is a major issue. In
+                  this work we look at the techniques of Qin et al. (Qin and
+                  Jia., 2014; Qin and Du., 2018) which have been used to
+                  obfuscate SAT formulas before they are released to the cloud.
+                  We came up with a realistic attack against their technique
+                  that demonstrates how a malicious cloud provider can obtain
+                  significant information about the underlying SAT instance. Our
+                  work shows that ad hoc schemes cannot offer the required
+                  security guarantees for outsourcing SAT computations, hence
+                  more formal frameworks should be used instead.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <hr />
+
+        <div class="container py-0 m-0" id="paper-4">
+          <div class="row">
+            <div class="col-lg-8 mx-auto">
+              <div class="rounded border border-light p-5">
+                <h1 class="display-4 text-justify" dir="ltr">
+                  THINGS OBJECT NOTATION AS A COMMUNICATIONAL LIGHT-WEIGHTED
+                  LANGUAGE FOR IOT DEVICES
+                </h1>
+                <a
+                  class="text-justify"
+                  href="https://jit.ndhu.edu.tw/article/view/2201"
+                  >[link]</a
+                >
+                <p class="lead" dir="ltr">Abstract</p>
+                <hr />
+                <p class="text-justify" dir="ltr">
+                  IoT interoperability is a major challenge in the emerging IoT
+                  field. This paper introduces a novel and light weighted
+                  language for the IoT devices to use. TON (Things Object
+                  Notation) is a language which was built on top of JSON
+                  (JavaScript Object Notation) to accommodate the needs of IoTs'
+                  interoperability. This research improves two aspects of JSON
+                  (1) compactness and (2) commanding. Currently, a lot of
+                  communicational pollution such as wireless data and noise
+                  emerge from the explosion of the IoTs. Thus, a minimum
+                  information/data is needed to be sent. In addition, since most
+                  practitioners are hobbyists, a one language/protocol that
+                  passes information and commands will be more convenient.
+                  Further, this study provides three use cases and shows
+                  comparison between using JSON and TON as a mean to send data
+                  and information.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
+      <script>
+        $(document).ready(function () {
+          $("#nav-bar-academic").addClass("inverted");
+        });
+      </script>
     </body>
   </html>
 </html>

@@ -1,3 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;600&display=swap');
+
+
 * {
-    --bs-primary-rgb: 0, 79, 170;
-  }
+  --bs-primary-rgb: 0, 150, 255;
+  font-family: 'Cairo', sans-serif;
+}
+.inverted {
+  filter: invert(1);
+}
+.lead {
+  font-size: 1.25rem; /* Larger text for the abstract lead */
+  font-weight: 300; /* Lighter font-weight */
+}
+
+hr {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+.text-justify {
+  text-align: justify;
+  text-justify: inter-word;
+}

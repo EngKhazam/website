@@ -1,15 +1,33 @@
-<nav class="navbar fixed-bottom bg-primary primary">
-  <div class="container">
-    <a class="nav-item text-white" href="/index.html">Home</a>
-    <a class="nav-item text-white" href="/html/educational.html">educational</a>
-    <a class="nav-item text-white" href="/html/fun.html">fun</a>
-    <a
-      class="nav-item text-white"
-      href="https://www.youtube.com/channel/UChyQgE14JcfQxFafHyaZkwQ"
-    >
-      <i class="fa-brands fa-youtube"></i>
-    </a>
-    <a class="nav-item text-white" href="/html/academic.html">academic</a>
-    <a class="nav-item text-white" href="/html/about.html">about</a>
-  </div>
-</nav>
+<div class="m-5">
+  <nav class="navbar fixed-bottom bg-primary primary" id="navbar">
+    <div class="container xl">
+      <a class="nav-item text-white" href="/index.html">
+        <i class="fa-solid fa-house" id="nav-bar-home"></i>
+      </a>
+      <a class="nav-item text-white" href="/html/educational.html">
+        <i class="fa-solid fa-chalkboard-user" id="nav-bar-educational"></i>
+      </a>
+      <a class="nav-item text-white" href="/html/fun.html">
+        <i class="fa-regular fa-face-grin-stars" id="nav-bar-fun"> </i>
+      </a>
+      <a
+        class="nav-item text-white"
+        href="https://www.youtube.com/channel/UChyQgE14JcfQxFafHyaZkwQ"
+      >
+        <i class="fa-brands fa-youtube" id="nav-bar-youtube"></i>
+      </a>
+      <a class="nav-item text-white" href="/html/academic.html">
+        <i class="fa-solid fa-graduation-cap" id="nav-bar-academic"></i>
+      </a>
+      <a class="nav-item text-white" href="/html/about.html">
+        <i class="fa-solid fa-address-card" id="nav-bar-about"></i>
+      </a>
+    </div>
+  </nav>
+</div>
+
+<script>
+  $(document).ready(function () {
+    $("#nav-bar-home").addClass("inverted");
+  });
+</script>

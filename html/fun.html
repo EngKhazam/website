@@ -1,19 +1,57 @@
 <!DOCTYPE html>
-<html lang="en" data-bs-theme="dark">
+<html lang="ar" data-bs-theme="dark" dir="rtl">
   <html>
     <head>
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
       <title>Engineer Khazam</title>
       <script
         src="https://code.jquery.com/jquery-3.7.1.min.js"
         integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
         crossorigin="anonymous"
       ></script>
-      <script src="/website/js/includes.js"></script>
+      <script src="/js/includes.js"></script>
     </head>
     <body>
-      <div class="m-5">
-        <div id="navbar-placeholder"></div>
+      <div class="m-2">
+        <nav class="navbar fixed-bottom bg-primary primary" id="navbar">
+          <div class="container xl">
+            <a class="nav-item text-white" href="/index.html">
+              <i class="fa-solid fa-house" id="nav-bar-home"></i>
+            </a>
+            <a class="nav-item text-white" href="/website/html/educational.html">
+              <i
+                class="fa-solid fa-chalkboard-user"
+                id="nav-bar-educational"
+              ></i>
+            </a>
+            <a class="nav-item text-white" href="/website/html/fun.html">
+              <i class="fa-regular fa-face-grin-stars" id="nav-bar-fun"> </i>
+            </a>
+            <a
+              class="nav-item text-white"
+              href="https://www.youtube.com/channel/UChyQgE14JcfQxFafHyaZkwQ"
+            >
+              <i class="fa-brands fa-youtube" id="nav-bar-youtube"></i>
+            </a>
+            <a class="nav-item text-white" href="/website/html/academic.html">
+              <i class="fa-solid fa-graduation-cap" id="nav-bar-academic"></i>
+            </a>
+            <a class="nav-item text-white" href="/website/html/about.html">
+              <i class="fa-solid fa-address-card" id="nav-bar-about"></i>
+            </a>
+          </div>
+        </nav>
+        <div class="p-5">
+          <h1 class="text-center">المفروض الصفحة تحتوي أشياء تونس</h1>
+          <h3 class="text-center p-5">قريباً إن شاء الله</h3>
+        </div>
       </div>
+
+      <script>
+        $(document).ready(function () {
+          $("#nav-bar-fun").addClass("inverted");
+        });
+      </script>
     </body>
   </html>
 </html>
