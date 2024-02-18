@@ -25,6 +25,23 @@
         .gallery a {
           display: block;
           overflow: hidden;
+          text-decoration: none;
+        }
+        .gallery a span {
+          display: inline-block;
+          overflow: hidden;
+          text-align: center;
+          z-index: 1;
+          width: 100%;
+          background-color: #808080;
+          color: white;
+          padding-top: 1rem;
+          padding-bottom: 1rem;
+          font-weight: bolder;
+        }
+
+        .gallery a span:hover {
+          background-color: #666;
         }
 
         .gallery img {
@@ -80,8 +97,12 @@
         <div class="gallery">
           <a href="/website/p5js/projectiles/index.html" target="">
             <img src="/website/content/images/projectile.png" />
+            <span>المقذوفات</span>
           </a>
-          <!-- Add more simulations as needed -->
+          <a href="/website/p5js/projectiles/index.html" target="">
+            <img src="/website/content/images/electroStatic.png" />
+            <span>الكهرباء السَّاكنة</span>
+          </a>
         </div>
       </div>
       <script>
