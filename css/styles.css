@@ -23,3 +23,26 @@ hr {
   text-align: justify;
   text-justify: inter-word;
 }
+
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Creates a responsive grid */
+  gap: 10px; /* Space between items */
+  padding: 10px;
+}
+
+.gallery a {
+  display: block;
+  overflow: hidden;
+}
+
+.gallery img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.5s ease;
+}
+
+.gallery img:hover {
+  transform: scale(1.1); /* Zoom effect on hover */
+}
