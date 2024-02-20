@@ -10,6 +10,49 @@
         crossorigin="anonymous"
       ></script>
       <script src="/website/js/includes.js"></script>
+      <style>
+        .gallery {
+          display: grid;
+          grid-template-columns: repeat(
+            auto-fill,
+            minmax(20%, 1fr)
+          ); /* Creates a responsive grid */
+          gap: 3rem; /* Space between items */
+          padding: 3rem;
+        }
+
+        .gallery a {
+          display: block;
+          overflow: hidden;
+          text-decoration: none;
+        }
+        .gallery a span {
+          display: inline-block;
+          overflow: hidden;
+          text-align: center;
+          z-index: 1;
+          width: 100%;
+          background-color: #808080;
+          color: white;
+          padding-top: 1rem;
+          padding-bottom: 1rem;
+          font-weight: bolder;
+        }
+
+        .gallery a span:hover {
+          background-color: #666;
+        }
+
+        .gallery img {
+          width: 100%;
+          height: auto;
+          transition: transform 0.5s ease;
+        }
+
+        .gallery img:hover {
+          transform: scale(1.1); /* Zoom effect on hover */
+        }
+      </style>
     </head>
     <body>
       <div class="m-2">
