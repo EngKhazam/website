@@ -11,6 +11,11 @@ let maxD = 100;
 let minG = 0;
 let maxG = 5;
 let vectorDebug = true;
+let randomLimit = 0.5;
+let _textSize = 16;
+let _textDrag = "الإعاقة";
+let _textElectroStatic = "الكهرباء السَّاكنة";
+let _textGravity = "الجاذبيَّة";
 
 class Rod {
   constructor(charge) {
@@ -56,16 +61,16 @@ class Paper {
     let noiseScale = this.w;
     this.vertexes.push({ x: 0, y: 0 });
     this.vertexes.push({
-      x: this.w + random(-millis(), millis()) * noiseScale,
-      y: random(-millis(), millis()) * noiseScale,
+      x: this.w + random(-randomLimit, randomLimit) * noiseScale,
+      y: random(-randomLimit, randomLimit) * noiseScale,
     });
     this.vertexes.push({
-      x: this.w + random(-millis(), millis()) * noiseScale,
-      y: this.h + random(-millis(), millis()) * noiseScale,
+      x: this.w + random(-randomLimit, randomLimit) * noiseScale,
+      y: this.h + random(-randomLimit, randomLimit) * noiseScale,
     });
     this.vertexes.push({
-      x: random(-millis(), millis()) * noiseScale,
-      y: this.h + random(-millis(), millis()) * noiseScale,
+      x: random(-randomLimit, randomLimit) * noiseScale,
+      y: this.h + random(-randomLimit, randomLimit) * noiseScale,
     });
 
     this.cx = 0;
@@ -158,7 +163,7 @@ class Paper {
     let speed = velocity.mag();
     let dragMagnitude = constrain(
       (1000 * _scaling * (this.C_d * (speed * speed))) / 2 +
-        noise(millis()) * 5,
+        noise(randomLimit) * 5,
       minD,
       maxD
     );
@@ -175,8 +180,8 @@ class Paper {
     let k = 8.99 * _scaling * 10; // Coulomb's constant
     let r = p5.Vector.dist(
       createVector(
-        rod.x + noise(millis(), 0) * 5,
-        rod.y + noise(millis(), 1) * 5
+        rod.x + noise(randomLimit, 0) * 5,
+        rod.y + noise(randomLimit, 1) * 5
       ),
       createVector(this.x + this.cx, this.y + this.cy)
     ); // Distance between rod and paper
@@ -198,6 +203,9 @@ class Paper {
 let checkbox;
 function setup() {
   createCanvas(windowWidth, windowHeight * 0.9);
+  _textSize = width / 30;
+  textSize(_textSize);
+
   rod = new Rod(300);
   for (let i = 0; i < 5; i++) {
     papers.push(new Paper());
@@ -227,35 +235,40 @@ function drawBackground() {
   strokeWeight(1);
   let spacing = min(width, height) / 10;
   for (let i = 0; i < width; i += spacing) {
-    line(0, i, width, i);
     line(i, 0, i, height);
+  }
+  for (let i = 0; i < height; i += spacing) {
+    line(0, i, width, i);
   }
 }
 
 function drawColorLegend() {
   if (vectorDebug) {
+    let xoffset = 10;
+    let yoffset = 10;
+
     stroke(255);
     strokeWeight(2);
     fill(255, 0, 0);
-    rect(10, 10, 30, 10);
+    rect(10, yoffset + _textSize * 0, 30, _textSize);
     fill(0);
     textAlign(LEFT, TOP);
-    text("الجاذبيَّة", 40 + 10, 10);
+    text(_textGravity, 40 + xoffset, yoffset + _textSize * 0);
 
     stroke(255);
     strokeWeight(2);
     fill(0, 255, 0);
-    rect(10, 30, 30, 10);
+    rect(10, 2 * yoffset + _textSize, 30, _textSize);
     fill(0);
     textAlign(LEFT, TOP);
-    text("الكهرباء السَّاكنة", 40 + 10, 30);
+    text(_textElectroStatic, 40 + 10, 2 * yoffset + _textSize);
 
     stroke(255);
     strokeWeight(2);
     fill(0, 0, 255);
-    rect(10, 50, 30, 10);
+    rect(10, 3 * 10 + _textSize * 2, 30, _textSize);
     fill(0);
     textAlign(LEFT, TOP);
-    text("الإعاقة", 40 + 10, 50);
+    text(_textDrag, 40 + 10, 3 * yoffset + _textSize * 2);
   }
 }
