@@ -152,6 +152,7 @@ function restart() {
   for (let i = 0; i < width; i++) {
     pressureHistory.push(0);
   }
+  timeSinceStart = 0;
 }
 
 function dashLine(x, y, w, h, step, gap) {
