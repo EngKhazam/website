@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
+<url>
+  <loc>https://engkhazam.github.io/website/</loc>
+  <lastmod>2024-04-20T17:41:59+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://engkhazam.github.io/website/index.html</loc>
+  <lastmod>2024-04-20T17:41:59+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://engkhazam.github.io/website/html/educational.html</loc>
+  <lastmod>2024-04-20T17:41:59+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://engkhazam.github.io/website/html/fun.html</loc>
+  <lastmod>2024-04-20T17:41:59+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://engkhazam.github.io/website/html/academic.html</loc>
+  <lastmod>2024-04-20T17:41:59+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://engkhazam.github.io/website/html/about.html</loc>
+  <lastmod>2024-04-20T17:41:59+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://engkhazam.github.io/website/p5js/projectiles/index.html</loc>
+  <lastmod>2024-04-20T17:41:59+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://engkhazam.github.io/website/p5js/electroStatic/index.html</loc>
+  <lastmod>2024-04-20T17:41:59+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://engkhazam.github.io/website/p5js/goelogySimulation/index.html</loc>
+  <lastmod>2024-04-20T17:41:59+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://engkhazam.github.io/website/p5js/employeeSimulator/index.html</loc>
+  <lastmod>2024-04-20T17:41:59+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://engkhazam.github.io/website/p5js/golfGame/index.html</loc>
+  <lastmod>2024-04-20T17:41:59+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+
+
+</urlset>
