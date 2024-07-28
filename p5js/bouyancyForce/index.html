@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.4/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.4/addons/p5.sound.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <meta charset="utf-8" />
+  </head>
+  <body>
+    <main></main>
+
+    <button onclick="restart()">ابدأ</button>
+    <button onclick="stablize()">تثبيت</button>
+    <div class="check-box-container">
+      <label for="debugMode">Debug:</label>
+      <input type="checkbox" id="debugCheckBox" onchange="toggleDebug()" />
+    </div>
+    <div class="spacing"></div>
+    <div class="container">
+      <h2>المحاكي</h2>
+      <label for="precision">الدقَّة:</label>
+      <input type="number" id="precision" step="1" value="300" />
+      <div class="spacing"></div>
+      <label for="dt">أجزاء الثواني (ثانية):</label>
+      <input
+        type="range"
+        id="dt"
+        min="0.0001"
+        max="1"
+        step="0.0001"
+        value="0.1"
+        oninput="updateSimulationSettings()"
+      />
+      <div class="spacing"></div>
+      <label for="simulationSpeed">سرعة المحاكي (حسبة\ثانية):</label>
+      <input
+        type="range"
+        id="simulationSpeed"
+        min="1"
+        max="100"
+        step="1"
+        value="10"
+        oninput="updateSimulationSettings()"
+      />
+    </div>
+
+    <div class="container">
+      <h2>السَّفينة</h2>
+      <label for="mass">الكتلة (Kg):</label>
+      <input type="number" id="mass" value="20000000" />
+      <div class="spacing"></div>
+      <label for="radius">نصف القطر (m):</label>
+      <input type="number" id="radius" value="100" />
+    </div>
+
+    <div class="container">
+      <h2>السائل (المائع)</h2>
+      <label for="density">الكثافة (Kg/m³):</label>
+      <input type="number" id="density" value="997" />
+      <div class="spacing"></div>
+      <label for="viscosity">اللزوجة (Pa·s):</label>
+      <input type="number" id="viscosity" value="0.001" />
+    </div>
+    <script src="ship.js"></script>
+    <script src="fluid.js"></script>
+    <script src="sketch.js"></script>
+  </body>
+</html>
