@@ -12,9 +12,19 @@
     <button onclick="restart()">ابدأ</button>
     <button onclick="stablize()">تثبيت</button>
     <div class="check-box-container">
+      <label for="realTimeSimulation">تزامن:</label>
+      <input
+        type="checkbox"
+        id="realTimeSimulationCheckBox"
+        onchange="toggleRealTime()"
+        checked
+      />
+    </div>
+    <div class="check-box-container">
       <label for="debugMode">Debug:</label>
       <input type="checkbox" id="debugCheckBox" onchange="toggleDebug()" />
     </div>
+
     <div class="spacing"></div>
     <div class="container">
       <h2>المحاكي</h2>
@@ -41,6 +51,7 @@
         step="1"
         value="10"
         oninput="updateSimulationSettings()"
+        disabled
       />
     </div>
 

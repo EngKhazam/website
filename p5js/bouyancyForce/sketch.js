@@ -2,6 +2,7 @@ let system = {};
 system.debug = false;
 system.dt = 0.1;
 system.simulationSpeed = 10;
+system.simulationSpeedRealTime = true;
 system.g = 9.81;
 system.airDrag = 0.000018;
 system.precision = 300;
@@ -26,6 +27,10 @@ function draw() {
   background(180, 255, 255);
   system.fluid.display();
   system.ship.display();
+
+  if (system.simulationSpeedRealTime) {
+    system.simulationSpeed = 1 / deltaTime;
+  }
 
   let y_dir = 1;
   let y_dir_prev = 1;
@@ -80,13 +85,23 @@ function updateSimulationSettings() {
 
   system.dt = dt;
   system.simulationSpeed = simulationSpeed;
-  console.log(system.dt, system.simulationSpeed);
-  console.log(system.dt * system.simulationSpeed);
 }
 
 function toggleDebug() {
   const debug = document.getElementById("debugCheckBox").checked;
   system.debug = debug;
+}
+
+function toggleRealTime() {
+  const realTime = document.getElementById("realTimeSimulationCheckBox")
+    .checked;
+
+  document.getElementById("simulationSpeed").disabled = realTime;
+  system.simulationSpeedRealTime = realTime;
+  
+  if (!realTime) {
+    system.simulationSpeed = document.getElementById("simulationSpeed").value;
+  }
 }
 
 function upArrow(x, y, w, h) {
